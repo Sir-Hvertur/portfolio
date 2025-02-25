@@ -20,16 +20,16 @@ export const projects = [
     slug: "mtg-app",
     title: "MTG Card Search App",
     description:
-      "The second part of the epic trilogy where the Fellowship is broken, but their quest to destroy the One Ring continues.",
+      "A Swift app that can search for MTG cards from the Scryfall API and save them in a Realm database.",
     image: "/MTG-App.svg",
-    link: "https://example.com/the-two-towers",
+    link: "https://github.com/Sir-Hvertur/MTG-Card-Search-App",
   },
   {
     slug: "airecipe-app",
     title: "Plantmate",
     description:
-      "The final battle for Middle-earth begins. Frodo and Sam reach Mordor in their quest to destroy the One Ring.",
+      "An app that uses the Mistral API to generate vegetarian recipes based on user input.",
     image: "/Plantmate-App.svg",
-    link: "https://example.com/the-return-of-the-king",
+    link: "https://github.com/Sir-Hvertur/plantemate-ai-tmnc",
   },
 ];

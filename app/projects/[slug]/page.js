@@ -1,7 +1,7 @@
 "use client";
 import { useParams, useRouter } from "next/navigation";
 import { projects } from "../../data/projects"; // Adjust path as needed
-import { Image } from "lucide-react";
+import Image from "next/image";
 
 export default function ProjectDetailPage() {
   const { slug } = useParams();
@@ -26,9 +26,8 @@ export default function ProjectDetailPage() {
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold uppercase mb-2">{project.title}</h1>
           <p className="text-gray-600 max-w-3xl mx-auto mb-6">
-            This page contains the case study of {project.title} which includes
-            the Project Overview, Tools Used, and Live Link to the finished
-            product.
+            This page contains an overview of {project.title}, the tools Used,
+            and a link to the code repository.
           </p>
           <a
             href={project.link}
@@ -46,7 +45,9 @@ export default function ProjectDetailPage() {
             <Image
               src={project.image}
               alt={project.title}
-              className="mx-auto shadow-lg rounded-lg"
+              width={300}
+              height={400}
+              className="mx-auto rounded-lg"
             />
           </div>
         </div>
@@ -55,11 +56,7 @@ export default function ProjectDetailPage() {
         <div className="bg-white p-8 rounded-lg shadow-lg">
           <h2 className="text-2xl font-bold mb-4">Project Overview</h2>
 
-          <p className="text-gray-700 mb-8">
-            {project.description} Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Fusce feugiat, augue a pretium cursus, tellus augue
-            tempor libero, nec malesuada justo ipsum a lorem.
-          </p>
+          <p className="text-gray-700 mb-8">{project.description}</p>
 
           {/* Tools Used */}
           <h3 className="text-xl font-bold mb-4">Tools Used</h3>
@@ -92,7 +89,7 @@ export default function ProjectDetailPage() {
               rel="noopener noreferrer"
               className="inline-block bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition"
             >
-              SEE LIVE
+              SEE Code
             </a>
             <button
               onClick={() => router.back()}

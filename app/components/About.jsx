@@ -57,33 +57,68 @@ const About = () => {
             </a>
           </div>
 
-          {/* Right Side - Skills */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">My Skills</h3>
-            <div className="flex flex-wrap gap-3">
-              {[
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "React",
-                "WordPress",
-                "PHP",
-                "SASS",
-                "Git",
-                "GitHub",
-                "Responsive Design",
-                "SEO",
-                "Terminal",
-              ].map((skill, index) => (
-                <span
-                  key={index}
-                  className="bg-gray-200 text-gray-800 px-4 py-2 rounded-md text-sm font-medium"
-                >
-                  {skill}
-                </span>
-              ))}
+          {/* Right Side - Container for both skills sections */}
+          {/* Added this container to wrap the two sections so they both appear in the right column */}
+          <div className="flex flex-col gap-10">
+            {/* Software experience */}
+            <div>
+              <h3 className="text-xl font-bold mb-4">Software experience</h3>
+              <div className="flex flex-wrap gap-3">
+                {[
+                  "HTML",
+                  "CSS",
+                  "JavaScript",
+                  "React",
+                  "WordPress",
+                  "PHP",
+                  "Umbraco",
+                  "Git",
+                  "GitHub",
+                  "Tailwind",
+                  "Bootstrap",
+                  "Swift",
+                  "SQL",
+                  "Python",
+                  "Umbraco",
+                  "SCRUM",
+                  "XP",
+                ].map((skill, index) => (
+                  <span
+                    key={index}
+                    className="bg-gray-200 text-gray-800 px-4 py-2 rounded-md text-sm font-medium"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+            {/* IT Security topics */}
+            <div>
+              <h3 className="text-xl font-bold mb-4">
+                Knows about these topics in IT security
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                {[
+                  "IDS/IPS",
+                  "Firewalls",
+                  "Encryption",
+                  "DDOS",
+                  "Phishing",
+                  "Awareness Training",
+                  "ISO27001",
+                  "GDPR & NIS2",
+                ].map((skill, index) => (
+                  <span
+                    key={index}
+                    className="bg-gray-200 text-gray-800 px-4 py-2 rounded-md text-sm font-medium"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
+          {/* End of Right Side container */}
         </div>
       </div>
     </section>

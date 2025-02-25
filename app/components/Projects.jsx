@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const ProjectsPage = () => {
   return (
-    <section className="bg-gray-100 py-32 px-6 md:px-12">
+    <section id="projects" className="bg-gray-100 py-32 px-6 md:px-12">
       <div className="max-w-5xl mx-auto">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-6">
@@ -45,7 +45,7 @@ const ProjectsPage = () => {
                 href={`/projects/${project.slug}`}
                 className="inline-block self-start bg-green-600 text-white px-6 py-3 mt-6 rounded-lg font-semibold hover:bg-green-700 transition"
               >
-                Case Study
+                See more
               </Link>
             </div>
           ))}
