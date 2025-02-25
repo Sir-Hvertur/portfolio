@@ -2,35 +2,34 @@
 
 export const projects = [
   {
-    slug: "the-fellowship",
-    title: "The Fellowship of the Ring",
+    slug: "eventually-app",
+    title: "Eventually",
     description:
-      "Join Frodo and his companions on an epic journey to destroy the One Ring and save Middle-earth from the dark lord Sauron.",
-    image: "https://via.placeholder.com/800x500", // Placeholder image
-    link: "https://example.com/the-fellowship", // Could be your live project link
+      "A scheduling tool that helps you find the best time for a group of people to meet by proposing multiple time slots and allowing participants to vote on their availability.",
+    image: "/Eventually-App.svg",
+    link: "https://example.com/the-fellowship",
   },
   {
-    slug: "the-two-towers",
-    title: "The Two Towers",
+    slug: "coming-soon",
+    title: "Coming Soon",
+    description: "Soon to be revealed.",
+    image: "/Coming-App.svg",
+    link: "https://example.com/the-hobbit",
+  },
+  {
+    slug: "mtg-app",
+    title: "MTG Card Search App",
     description:
       "The second part of the epic trilogy where the Fellowship is broken, but their quest to destroy the One Ring continues.",
-    image: "https://via.placeholder.com/800x500",
+    image: "/MTG-App.svg",
     link: "https://example.com/the-two-towers",
   },
   {
-    slug: "the-return-of-the-king",
-    title: "The Return of the King",
+    slug: "airecipe-app",
+    title: "Plantmate",
     description:
       "The final battle for Middle-earth begins. Frodo and Sam reach Mordor in their quest to destroy the One Ring.",
-    image: "https://via.placeholder.com/800x500",
+    image: "/Plantmate-App.svg",
     link: "https://example.com/the-return-of-the-king",
-  },
-  {
-    slug: "the-hobbit",
-    title: "The Hobbit",
-    description:
-      "Bilbo Baggins embarks on a journey to the Lonely Mountain with a spirited group of dwarves to reclaim their mountain home.",
-    image: "https://via.placeholder.com/800x500",
-    link: "https://example.com/the-hobbit",
   },
 ];

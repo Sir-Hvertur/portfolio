@@ -40,7 +40,7 @@ export default function ProjectDetailPage() {
           </a>
         </div>
 
-        {/* Main Image + "HEY, MY NAME IS JOHN DOE" */}
+        {/* Main Image */}
         <div className="text-center mb-10">
           <div className="mt-8">
             <Image
@@ -54,6 +54,7 @@ export default function ProjectDetailPage() {
         {/* Project Overview Card */}
         <div className="bg-white p-8 rounded-lg shadow-lg">
           <h2 className="text-2xl font-bold mb-4">Project Overview</h2>
+
           <p className="text-gray-700 mb-8">
             {project.description} Lorem ipsum dolor sit amet, consectetur
             adipiscing elit. Fusce feugiat, augue a pretium cursus, tellus augue

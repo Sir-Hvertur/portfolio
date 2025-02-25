@@ -9,11 +9,11 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center">
           <Image
-            src="/profilepic.jpeg"
+            src="/profilepic.png"
             alt="Profile"
             width={40}
             height={40}
-            className="rounded-lg"
+            className="rounded-full"
           />
           <span className="ml-3 text-lg font-bold">Nikolaj Høeg Jensen</span>
         </div>
