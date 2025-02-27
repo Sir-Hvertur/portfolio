@@ -13,10 +13,10 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "service_z8kevx9", // EmailJS service ID
-        "template_ooyb8oa", // EmailJS template ID
+        "service_z8kevx9", // Your EmailJS service ID
+        "template_ooyb8oa", // Your EmailJS template ID
         e.target,
-        "uOmVn1k4y7KTbVIex" // EmailJS public key
+        "uOmVn1k4y7KTbVIex" // Your EmailJS public key
       )
       .then(
         (result) => {
@@ -55,15 +55,15 @@ const ContactForm = () => {
           {/* Name Field */}
           <div>
             <label
-              htmlFor="name"
+              htmlFor="from_name"
               className="block text-sm font-medium text-zinc-700 mb-1"
             >
               Name
             </label>
             <input
               type="text"
-              id="name"
-              name="name"
+              id="from_name"
+              name="from_name" // <-- Must match EmailJS variable
               placeholder="Enter Your Name"
               className="w-full border border-zinc-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-500"
               required
@@ -73,15 +73,15 @@ const ContactForm = () => {
           {/* Email Field */}
           <div>
             <label
-              htmlFor="email"
+              htmlFor="reply_to"
               className="block text-sm font-medium text-zinc-700 mb-1"
             >
               Email
             </label>
             <input
               type="email"
-              id="email"
-              name="email"
+              id="reply_to"
+              name="reply_to" // <-- Must match EmailJS variable
               placeholder="Enter Your Email"
               className="w-full border border-zinc-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-500"
               required
@@ -98,7 +98,7 @@ const ContactForm = () => {
             </label>
             <textarea
               id="message"
-              name="message"
+              name="message" // Keep this as "message" if your template uses {{message}}
               rows="5"
               placeholder="Enter Your Message"
               className="w-full border border-zinc-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-teal-500"
