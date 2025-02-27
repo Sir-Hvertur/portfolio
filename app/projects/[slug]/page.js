@@ -22,40 +22,53 @@ export default function ProjectDetailPage() {
   return (
     <section className="bg-zinc-50 min-h-screen pt-28 pb-20">
       <div className="max-w-5xl mx-auto px-6">
-        {/* Top Title + Description + "Project Link" Button */}
+        {/* Top Title + Description + "Live Demo" Button if available */}
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold uppercase mb-2">{project.title}</h1>
           <p className="text-zinc-600 max-w-3xl mx-auto mb-6">
-            This page contains an overview of {project.title}, the tools Used,
+            This page contains an overview of {project.title}, the tools used,
             and a link to the code repository.
           </p>
-          <a
-            href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-700 transition"
-          >
-            PROJECT LINK
-          </a>
+          {project.livedemo && (
+            <a
+              href={project.livedemo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-teal-700 transition"
+            >
+              LIVE DEMO
+            </a>
+          )}
         </div>
 
-        {/* Main Image */}
+        {/* Main Media Section */}
         <div className="text-center mb-10">
           <div className="mt-8">
-            <Image
-              src={project.image}
-              alt={project.title}
-              width={300}
-              height={400}
-              className="mx-auto rounded-lg"
-            />
+            {project.movie ? (
+              <video
+                controls
+                width={390}
+                height={520}
+                className="mx-auto rounded-lg"
+              >
+                <source src={project.movie} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            ) : (
+              <Image
+                src={project.image}
+                alt={project.title}
+                width={300}
+                height={400}
+                className="mx-auto rounded-lg"
+              />
+            )}
           </div>
         </div>
 
         {/* Project Overview Card */}
         <div className="bg-white p-8 rounded-lg shadow-lg">
           <h2 className="text-2xl font-bold mb-4">Project Overview</h2>
-
           <p className="text-zinc-700 mb-8">{project.description}</p>
 
           {/* Tools Used */}

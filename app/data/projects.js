@@ -5,8 +5,9 @@ export const projects = [
     description:
       "A scheduling tool that helps you find the best time for a group of people to meet by proposing multiple time slots and allowing participants to vote on their availability.",
     image: "/Eventually-App.svg",
-    link: "https://final-project-comic-sans-fork.vercel.app/",
+    link: "https://github.com/Sir-Hvertur/final-project-comic-sans-fork",
     tools: ["PHP", "React", "Git", "Tailwind", "HTML", "CSS", "MySQL"],
+    livedemo: "https://final-project-comic-sans-fork.vercel.app/",
   },
   {
     slug: "coming-soon",
@@ -14,7 +15,7 @@ export const projects = [
     description: "Soon to be revealed.",
     image: "/Coming-App.svg",
     link: "https://example.com/the-hobbit",
-    tools: [], // add tools as needed
+    tools: [],
   },
   {
     slug: "mtg-app",
@@ -24,6 +25,7 @@ export const projects = [
     image: "/MTG-App.svg",
     link: "https://github.com/Sir-Hvertur/MTG-Card-Search-App",
     tools: ["Swift", "Realm", "Scryfall API", "Git"],
+    movie: "/MTG-Card-Search-Demo.mov",
   },
   {
     slug: "airecipe-app",
