@@ -7,16 +7,18 @@ const Header = () => {
     <header className="bg-zinc-900 text-white py-4 fixed w-full top-0 z-50">
       <div className="container mx-auto flex justify-between items-center px-6">
         {/* Logo */}
-        <div className="flex items-center">
-          <Image
-            src="/profilepic.png"
-            alt="Profile"
-            width={40}
-            height={40}
-            className="rounded-full"
-          />
-          <span className="ml-3 text-lg font-bold">Nikolaj Høeg Jensen</span>
-        </div>
+        <Link href="/">
+          <div className="flex items-center">
+            <Image
+              src="/profilepic.png"
+              alt="Profile"
+              width={40}
+              height={40}
+              className="rounded-full"
+            />
+            <span className="ml-3 text-lg font-bold">Nikolaj Høeg Jensen</span>
+          </div>
+        </Link>
 
         {/* Navigation */}
         <nav>

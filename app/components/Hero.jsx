@@ -4,7 +4,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     <div>
-      <section className="flex flex-col items-center justify-center py-64 px-6 md:px-12 bg-[url(/subtle-prism1.svg)] bg-cover bg-center">
+      <section className="flex flex-col items-center justify-center py-64 px-6 md:px-12 bg-[url(/subtle-prism.svg)] bg-cover bg-center">
         <h1 className="text-4xl font-bold">Welcome to my page</h1>
         <p className="mt-4 text-xl text-zinc-800">
           Im a currently a web developer student at Erhvervsakademi Aarhus

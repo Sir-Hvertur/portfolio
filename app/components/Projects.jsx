@@ -14,8 +14,7 @@ const ProjectsPage = () => {
         </h2>
 
         <p className="text-center text-zinc-600 mb-10">
-          Here you will find some of the personal and client projects that I
-          created, with each project containing its own case study.
+          Here you will find some of the projects that I have created.
         </p>
 
         {/* Projects List */}

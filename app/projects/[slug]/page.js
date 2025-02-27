@@ -1,6 +1,6 @@
 "use client";
 import { useParams, useRouter } from "next/navigation";
-import { projects } from "../../data/projects"; // Adjust path as needed
+import { projects } from "../../data/projects";
 import Image from "next/image";
 
 export default function ProjectDetailPage() {
@@ -61,24 +61,14 @@ export default function ProjectDetailPage() {
           {/* Tools Used */}
           <h3 className="text-xl font-bold mb-4">Tools Used</h3>
           <div className="flex flex-wrap gap-2 mb-8">
-            <span className="bg-zinc-200 text-zinc-700 px-4 py-2 rounded">
-              HTML
-            </span>
-            <span className="bg-zinc-200 text-zinc-700 px-4 py-2 rounded">
-              CSS
-            </span>
-            <span className="bg-zinc-200 text-zinc-700 px-4 py-2 rounded">
-              JavaScript
-            </span>
-            <span className="bg-zinc-200 text-zinc-700 px-4 py-2 rounded">
-              SASS
-            </span>
-            <span className="bg-zinc-200 text-zinc-700 px-4 py-2 rounded">
-              Git
-            </span>
-            <span className="bg-zinc-200 text-zinc-700 px-4 py-2 rounded">
-              GitHub
-            </span>
+            {project.tools.map((tool, index) => (
+              <span
+                key={index}
+                className="bg-zinc-200 text-zinc-700 px-4 py-2 rounded"
+              >
+                {tool}
+              </span>
+            ))}
           </div>
 
           {/* Bottom Buttons */}
