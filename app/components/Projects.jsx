@@ -1,5 +1,3 @@
-// pages/projects/index.jsx
-
 import Link from "next/link";
 import { projects } from ".././data/projects";
 import Image from "next/image";
@@ -19,35 +17,41 @@ const ProjectsPage = () => {
 
         {/* Projects List */}
         <div className="grid md:grid-cols-2 gap-12">
-          {projects.map((project) => (
-            <div
-              key={project.slug}
-              className="flex flex-col justify-between bg-white p-6 rounded-lg shadow h-full"
-            >
-              {/* Top section: image + text */}
-              <div>
-                <div className="flex justify-center">
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    width={300}
-                    height={400}
-                    className="rounded-lg mb-4 object-cover object-center"
-                  />
-                </div>
-                <h3 className="text-xl font-bold mb-3">{project.title}</h3>
-                <p className="text-zinc-700">{project.description}</p>
-              </div>
+          {projects.map((project) => {
+            // Determine image dimensions based on the halfSize attribute
+            const imgWidth = project.halfSize ? 150 : 300;
+            const imgHeight = project.halfSize ? 200 : 400;
 
-              {/* Bottom section: button */}
-              <Link
-                href={`/projects/${project.slug}`}
-                className="inline-block self-start bg-teal-600 text-white px-6 py-3 mt-6 rounded-lg font-semibold hover:bg-teal-700 transition"
+            return (
+              <div
+                key={project.slug}
+                className="flex flex-col justify-between bg-white p-6 rounded-lg shadow h-full"
               >
-                See more
-              </Link>
-            </div>
-          ))}
+                {/* Top section: image + text */}
+                <div>
+                  <div className="flex justify-center">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      width={imgWidth}
+                      height={imgHeight}
+                      className="rounded-lg mb-4 object-cover object-center"
+                    />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">{project.title}</h3>
+                  <p className="text-zinc-700">{project.description}</p>
+                </div>
+
+                {/* Bottom section: button */}
+                <Link
+                  href={`/projects/${project.slug}`}
+                  className="inline-block self-start bg-teal-600 text-white px-6 py-3 mt-6 rounded-lg font-semibold hover:bg-teal-700 transition"
+                >
+                  See more
+                </Link>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

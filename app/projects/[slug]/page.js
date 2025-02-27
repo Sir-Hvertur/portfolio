@@ -18,7 +18,8 @@ export default function ProjectDetailPage() {
       </div>
     );
   }
-
+  const imgWidth = project.halfSize ? 225 : 300;
+  const imgHeight = project.halfSize ? 300 : 400;
   return (
     <section className="bg-zinc-50 min-h-screen pt-28 pb-20">
       <div className="max-w-5xl mx-auto px-6">
@@ -58,8 +59,8 @@ export default function ProjectDetailPage() {
               <Image
                 src={project.image}
                 alt={project.title}
-                width={300}
-                height={400}
+                width={imgWidth}
+                height={imgHeight}
                 className="mx-auto rounded-lg"
               />
             )}

@@ -26,6 +26,7 @@ export const projects = [
     link: "https://github.com/Sir-Hvertur/MTG-Card-Search-App",
     tools: ["Swift", "Realm", "Scryfall API", "Git"],
     movie: "/MTG-Card-Search-Demo-Compressed.mov",
+    halfSize: true, // Image should be half the size
   },
   {
     slug: "airecipe-app",
@@ -35,5 +36,6 @@ export const projects = [
     image: "/Plantmate-App.svg",
     link: "https://github.com/Sir-Hvertur/plantemate-ai-tmnc",
     tools: ["React", "Tailwind", "Mistral API", "Git"],
+    halfSize: true, // Image should be half the size
   },
 ];
