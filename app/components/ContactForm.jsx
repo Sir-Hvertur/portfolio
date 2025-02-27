@@ -4,12 +4,12 @@ const ContactForm = () => {
   return (
     <section
       id="contact"
-      className="bg-gray-50  py-32 px-6 flex flex-col items-center"
+      className="bg-zinc-50  py-32 px-6 flex flex-col items-center"
     >
       {/* Title & Subtext Section */}
       <div className="text-center mb-10">
         <h1 className="text-3xl font-bold mb-6">CONTACT</h1>
-        <p className="text-gray-600">
+        <p className="text-zinc-600">
           Feel free to contact me by submitting the form below and I will get
           back to you as soon as possible.
         </p>
@@ -22,7 +22,7 @@ const ContactForm = () => {
           <div>
             <label
               htmlFor="name"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-medium text-zinc-700 mb-1"
             >
               Name
             </label>
@@ -31,8 +31,8 @@ const ContactForm = () => {
               id="name"
               name="name"
               placeholder="Enter Your Name"
-              className="w-full border border-gray-300 rounded px-3 py-2 
-                                             focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full border border-zinc-300 rounded px-3 py-2 
+                                             focus:outline-none focus:ring-2 focus:ring-teal-500"
             />
           </div>
 
@@ -40,7 +40,7 @@ const ContactForm = () => {
           <div>
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-medium text-zinc-700 mb-1"
             >
               Email
             </label>
@@ -49,8 +49,8 @@ const ContactForm = () => {
               id="email"
               name="email"
               placeholder="Enter Your Email"
-              className="w-full border border-gray-300 rounded px-3 py-2 
-                                             focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full border border-zinc-300 rounded px-3 py-2 
+                                             focus:outline-none focus:ring-2 focus:ring-teal-500"
             />
           </div>
 
@@ -58,7 +58,7 @@ const ContactForm = () => {
           <div>
             <label
               htmlFor="message"
-              className="block text-sm font-medium text-gray-700 mb-1"
+              className="block text-sm font-medium text-zinc-700 mb-1"
             >
               Message
             </label>
@@ -67,8 +67,8 @@ const ContactForm = () => {
               name="message"
               rows="5"
               placeholder="Enter Your Message"
-              className="w-full border border-gray-300 rounded px-3 py-2 
-                                             focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full border border-zinc-300 rounded px-3 py-2 
+                                             focus:outline-none focus:ring-2 focus:ring-teal-500"
             />
           </div>
 
@@ -76,10 +76,10 @@ const ContactForm = () => {
           <div className="flex justify-end">
             <button
               type="submit"
-              className="w-32 bg-green-600 text-white py-2 rounded-md 
-                                             hover:bg-green-700 transition-colors"
+              className="w-32 bg-teal-600 text-white py-2 rounded-md 
+                                             hover:bg-teal-700 transition-colors font-semibold"
             >
-              SUBMIT
+              Submit
             </button>
           </div>
         </form>

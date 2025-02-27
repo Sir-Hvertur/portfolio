@@ -1,7 +1,7 @@
 import { Linkedin, Github } from "lucide-react";
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-6">
+    <footer className="bg-zinc-900 text-white py-6">
       <div className="container mx-auto text-center">
         <p className="text-sm">
           © {new Date().getFullYear()} Nikolaj Høeg Jensen. All rights reserved.
