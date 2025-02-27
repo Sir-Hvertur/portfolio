@@ -25,7 +25,7 @@ export const projects = [
     image: "/MTG-App.svg",
     link: "https://github.com/Sir-Hvertur/MTG-Card-Search-App",
     tools: ["Swift", "Realm", "Scryfall API", "Git"],
-    movie: "/MTG-Card-Search-Demo.mov",
+    movie: "/MTG-Card-Search-Demo-Compressed.mov",
   },
   {
     slug: "airecipe-app",
