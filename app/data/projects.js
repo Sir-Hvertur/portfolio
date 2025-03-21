@@ -10,12 +10,15 @@ export const projects = [
     livedemo: "https://final-project-comic-sans-fork.vercel.app/",
   },
   {
-    slug: "coming-soon",
-    title: "Coming Soon",
-    description: "Soon to be revealed.",
-    image: "/Coming-App.svg",
-    link: "https://example.com/the-hobbit",
-    tools: [],
+    slug: "book-app",
+    title: "Book Space",
+    description:
+      "A digital reading app like Kindle. The app has book recommendations, collections, and reading statistics.",
+    image: "/Book-App.png",
+    link: "https://github.com/eaaa-dob-wu-e24a/awu-exam-Sir-Hvertur",
+    tools: ["React Router 7", "Tailwind", "Git", "MongoDB", "TypeScript"],
+    livedemo: "https://awu-exam-sir-hvertur.onrender.com/",
+    halfSize: true, // Image should be half the size
   },
   {
     slug: "mtg-app",
@@ -26,16 +29,6 @@ export const projects = [
     link: "https://github.com/Sir-Hvertur/MTG-Card-Search-App",
     tools: ["Swift", "Realm", "Scryfall API", "Git"],
     movie: "/MTG-Card-Search-Demo-Compressed.mov",
-    halfSize: true, // Image should be half the size
-  },
-  {
-    slug: "airecipe-app",
-    title: "Plantmate",
-    description:
-      "An app that uses the Mistral API to generate vegetarian recipes based on user input.",
-    image: "/Plantmate-App.svg",
-    link: "https://github.com/Sir-Hvertur/plantemate-ai-tmnc",
-    tools: ["React", "Tailwind", "Mistral API", "Git"],
     halfSize: true, // Image should be half the size
   },
 ];

@@ -19,8 +19,8 @@ const ProjectsPage = () => {
         <div className="grid md:grid-cols-2 gap-12">
           {projects.map((project) => {
             // Determine image dimensions based on the halfSize attribute
-            const imgWidth = project.halfSize ? 150 : 300;
-            const imgHeight = project.halfSize ? 200 : 400;
+            const imgWidth = project.halfSize ? 200 : 300;
+            const imgHeight = project.halfSize ? 300 : 400;
 
             return (
               <div
